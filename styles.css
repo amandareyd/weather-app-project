@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    font-family: "Libre Bodoni", serif;
+  }
+  
+  .nashville {
+    width: 300px;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+  }
+  
+  .units {
+    font-size: 14px;
+  }
+  .temp {
+    font-size: 40px;
+    text-decoration: none;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  
+  .col {
+    width: 75px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  #search-form {
+    padding: 10px;
+  }
+  
+  #submit {
+    background-color: #017bfe;
+    color: white;
+    border-radius: 15px 15px;
+    box-shadow: 0px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #70a2f4;
+    color: white;
+    border-radius: 15px 15px;
+    box-shadow: none;
+  }
