@@ -66,7 +66,8 @@ li{
   
   
   #search-form {
-    padding: 10px;
+    padding: 0px;
+    margin-left: 0;
   }
   
   #submit {
@@ -74,6 +75,9 @@ li{
     color: white;
     border-radius: 15px 15px;
     box-shadow: 0px;
+  }
+  #current-location-button{
+    margin-left: 0;
   }
   
  
