@@ -33,7 +33,7 @@ function showWeather(response) {
  document.querySelector("#humidity").innerHTML=response.data.main.humidity;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
-    document.querySelector("#wind").innerHTML=Math.round(response.data.wind.speed);
+    document.querySelector("#wind").innerHTML=Math.round(response.data.wind.speed/1.609);
     document.querySelector("#current").innerHTML=formatDate(response.data.dt*1000);  
     document.querySelector("#icon").setAttribute(
       "src",
