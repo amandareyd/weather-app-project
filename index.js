@@ -25,6 +25,7 @@ function formatDate(timestamp){
 }
 
 function showWeather(response) {
+  console.log(response);
 
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -33,7 +34,10 @@ function showWeather(response) {
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
     document.querySelector("#wind").innerHTML=Math.round(response.data.wind.speed);
-    document.querySelector("#current").innerHTML=formatDate(response.data.dt*1000);    
+    document.querySelector("#current").innerHTML=formatDate(response.data.dt*1000);  
+    document.querySelector("#icon").setAttribute(
+      "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);  
 
 
 }
