@@ -23,11 +23,12 @@ if (minutes < 10) {
 current.innerHTML = `${day} ${hours}: ${minutes}`;
 
 function showWeather(response) {
-  console.log(response);
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
+ document.querySelector("#humidity").innerHTML=response.data.main.humidity;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
 }
