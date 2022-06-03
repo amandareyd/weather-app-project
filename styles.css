@@ -2,6 +2,32 @@ body {
     background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     font-family: "Libre Bodoni", serif;
   }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 35px;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #70a2f4;
+    color: white;
+    border-radius: 15px 15px;
+    box-shadow: none;
+  }
+  footer{
+      font-size: 12px;
+  }
+  .weather-app-wrapper{
+    max-width: 600px;
+    margin: 30px auto;
+  }
+  .weather-app{
+    padding: 20px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;}
   
   .nashville {
     width: 300px;
@@ -17,12 +43,7 @@ body {
     font-size: 40px;
     text-decoration: none;
   }
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 35px;
-  }
+  
   
   .col {
     width: 75px;
@@ -44,15 +65,4 @@ body {
     box-shadow: 0px;
   }
   
-  button {
-    display: block;
-    margin: 0 auto;
-    padding: 5px;
-    background-color: #70a2f4;
-    color: white;
-    border-radius: 15px 15px;
-    box-shadow: none;
-  }
-  footer{
-      font-size: 12px;
-  }
+ 
