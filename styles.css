@@ -14,7 +14,7 @@ ul{
 }
 li{
   list-style: none;
-  color: black;
+  color:#017bfe;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -52,6 +52,9 @@ li{
   .overview {
     color: black;
     margin-bottom: 10px;
+   
+  }
+  .overview:first-letter{
     text-transform: capitalize;
   }
   .temp {

@@ -1,7 +1,16 @@
-let now = new Date();
-let current = document.querySelector("#current");
-
-let days = [
+function formatDate(timestamp){
+ let date = new Date(timestamp);
+ let hours = date.getHours();
+ if (hours < 10) {
+  hours = `0${hours}`;
+ }
+ 
+ let minutes = date.getMinutes();
+ if (minutes < 10) {
+  minutes = `0${minutes}`;
+ }
+ 
+ let days = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -9,18 +18,11 @@ let days = [
   "Thursday",
   "Friday",
   "Saturday"
-];
-let day = days[now.getDay()];
-let hours = now.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
+ ];
+ 
+ let day = days[date.getDay()];
+  return `${day} ${hours}: ${minutes}`;
 }
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-
-current.innerHTML = `${day} ${hours}: ${minutes}`;
 
 function showWeather(response) {
 
@@ -31,7 +33,7 @@ function showWeather(response) {
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].description;
     document.querySelector("#wind").innerHTML=Math.round(response.data.wind.speed);
-    
+    document.querySelector("#current").innerHTML=formatDate(response.data.dt*1000);    
 
 
 }
