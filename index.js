@@ -29,7 +29,7 @@ function showWeather(response) {
     response.data.main.temp
   );
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 }
 function searchCity(city) {
   let key = "5ed8c1afda66c286f8800a91129964e1";
