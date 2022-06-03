@@ -2,12 +2,24 @@ body {
     background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     font-family: "Libre Bodoni", serif;
   }
-  h3 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 35px;
-  }
+h1{font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
   button {
     display: block;
     margin: 0 auto;
@@ -30,29 +42,12 @@ body {
     border-radius: 5px;}
   
   .nashville {
-    width: 300px;
-    text-align: center;
     color: black;
-    margin: 0 auto;
-  }
-  
-  .units {
-    font-size: 14px;
-  }
-  .temp {
-    font-size: 40px;
-    text-decoration: none;
+    margin-bottom: 20px;
+    text-transform: capitalize;
   }
   
   
-  .col {
-    width: 75px;
-    color: black;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    margin-top: 15px;
-  }
   
   #search-form {
     padding: 10px;
