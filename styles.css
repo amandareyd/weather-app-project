@@ -63,11 +63,14 @@ li{
         line-height: 1;
         font-weight: 400;
   }
-  
+  .units{
+    text-decoration: none;
+  }
   
   #search-form {
     padding: 0px;
     margin-left: 0;
+    margin-bottom: 10px;
   }
   
   #submit {
@@ -80,4 +83,19 @@ li{
     margin-left: 0;
   }
   
- 
+ .active{
+   color: black;
+   cursor: default;
+   text-decoration: none;
+ }
+ .active:hover{
+   text-decoration: none;
+   color: black;
+ }
+
+ #celsius-link{
+   text-decoration: none;
+   color: black;
+   cursor: default;
+
+ }
