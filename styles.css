@@ -18,8 +18,11 @@ li{
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  
 }
-
+li:first-letter{
+  text-transform: capitalize;
+}
   button {
     display: block;
     margin: 0 auto;
@@ -29,11 +32,9 @@ li{
     border-radius: 15px 15px;
     box-shadow: none;
   }
-  footer{
-      font-size: 12px;
-  }
+  
   .weather-app-wrapper{
-    max-width: 600px;
+    max-width: 500px;
     margin: 30px auto;
   }
   .weather-app{
@@ -98,4 +99,7 @@ li{
    color: black;
    cursor: default;
 
+ }
+ #git-link{
+   text-decoration: none;
  }
