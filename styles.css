@@ -34,7 +34,7 @@ li:first-letter{
   }
   
   .weather-app-wrapper{
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px auto;
   }
   .weather-app{
@@ -42,7 +42,7 @@ li:first-letter{
     border: 3px solid #dadde1;
     border-radius: 5px;}
     
-    .weather-temperature img{
+    #icon{
      margin-left: 0px;
       margin-right: 0px;
       height: 90px;
@@ -63,6 +63,7 @@ li:first-letter{
         font-size: 64px;
         line-height: 1;
         font-weight: 400;
+        padding: 0px;
   }
   .units{
     text-decoration: none;
@@ -75,15 +76,66 @@ li:first-letter{
   }
   
   #submit {
-    background-color: #017bfe;
-    color: white;
-    border-radius: 15px 15px;
-    box-shadow: 0px;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor:pointer;
+    display: inline-flex;
+   
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 4px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  
   }
   #current-location-button{
     margin-left: 0;
-  }
+    align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor:pointer;
+  display: inline-flex;
+ 
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
   
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+
+  }
+
  .active{
    color: black;
    cursor: default;
@@ -102,4 +154,5 @@ li:first-letter{
  }
  #git-link{
    text-decoration: none;
+   
  }
