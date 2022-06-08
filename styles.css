@@ -70,6 +70,7 @@ li:first-letter{
   }
   
   #search-form {
+    
     padding: 0px;
     margin-left: 0;
     margin-bottom: 10px;
@@ -135,6 +136,21 @@ li:first-letter{
   white-space: nowrap;
 
   }
+  .weather-forecast{
+    margin-top:20px;
+    text-align: center;
+    color:#017bfe;
+  }
+  .weather-forecast-date {
+    font-size: 16px;
+   
+  }
+  .weather-forecast-temperature-min{
+    opacity: 0.5;
+  }
+.weather-forcast-temperatures{
+  font-size: 14px;
+}
 
  .active{
    color: black;
