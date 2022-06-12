@@ -106,7 +106,7 @@ li:first-letter{
   
   }
   #current-location-button{
-    margin-left: 0;
+   
     align-items: center;
   appearance: none;
   background-color: #3EB2FD;
@@ -124,7 +124,7 @@ li:first-letter{
   height: auto;
   justify-content: center;
   line-height: 1.5;
-  padding: 6px 20px;
+  padding: 5px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -162,12 +162,7 @@ li:first-letter{
    color: black;
  }
 
- #celsius-link{
-   text-decoration: none;
-   color: black;
-   cursor: default;
 
- }
  #git-link{
    text-decoration: none;
    

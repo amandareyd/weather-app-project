@@ -16,7 +16,9 @@
 
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="weather-app">
+        <div class="weather-app" class="mb-3">
+          <div class="row">
+            <div class="col-4">
           <form id="search-form">
             <input
             type="text"
@@ -24,11 +26,22 @@
             autofocus="on"
             id="search-text-input"
             />
+          </div>
+          <div class="col-4">
             <input type="submit" 
             value="Search"
             id="submit"
             />
+          </div>
+          
+          <div class="col-4">
+            <button id="current-location-button">
+            Current Location
+          </button>
+        </div>
+
           </form>
+        </div>
 
 
            <div class="overview">
@@ -48,7 +61,7 @@
           </ul>
         </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
                 <div class="clearfix weather-temperature">
                 <img 
                 src="" 
@@ -62,7 +75,7 @@
                    
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <ul>
                     
                     <li>
@@ -78,9 +91,7 @@
      <div class="weather-forecast" id="forecast">
        
      </div>
-     <button id="current-location-button">
-       current location
-     </button>
+     
         
     </div>
       <small > <a href="http://github.com/amandareyd/weather-app-project.git" target="_blank"
